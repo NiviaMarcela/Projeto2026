@@ -16,7 +16,7 @@
             <li><a href="#sobre">Sobre Nós</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="#cadastro">Cadastro</a></li>
-            <li class="btn-login"><a href="#login">Login</a></li>
+            <li id="login" class="login"><a href="#login">Login</a></li>
         </ul>
         <div class="barra-pesquisa">
          <div class="campo-busca">
@@ -31,6 +31,29 @@ placeholder="Buscar por título, autor, assunto..."
     </nav>
 </header>
 <main>
+<div id="modal" class="hidden">
+    <div class="modal-content">
+    <section >
+        <h2>Login</h2>
+        <form action="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>
+            Não tem conta? <a href="#cadastro">Cadastre-se</a>
+        </p>
+        <button id="fechar">Fechar</button>
+    </section>
+    </div>
+</div>
+
+       
+
+
+
     <div class="container">
 
 <aside class="lateral">
@@ -90,6 +113,6 @@ Adultos
 
 </div>
 </main>
-    
+    <script src="inicio.js"></script>
 </body>
 </html>
