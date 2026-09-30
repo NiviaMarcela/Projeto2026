@@ -1,118 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos/style.css" />
     <title>Livraria Virtual - Instituto Janela para o Mundo</title>
-</head>
-<body>
-<header>
-    <img src="imagem editada.png" alt="logo">
-    <nav>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/imagem editada.png" alt="logo" />
+
+      <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#biblioteca">Biblioteca</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#cadastro">Cadastro</a></li>
-            <li id="login" class="login"><a href="#login">Login</a></li>
+          <li><a href="/telas/inicio.html">Inicio</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#cadastro">Cadastro</a></li>
+          <li id="login" class="login">
+            <a href="#login">Login</a>
+          </li>
         </ul>
+
         <div class="barra-pesquisa">
-         <div class="campo-busca">
-🔍<input
-type="text"
-placeholder="Buscar por título, autor, assunto..."
-></div>
-
-
+          <div class="campo-busca">
+            🔍
+            <input
+              type="text"
+              placeholder="Buscar por título, autor, assunto..."
+            />
+          </div>
         </div>
-        
-    </nav>
-</header>
-<main>
-<div id="modal" class="hidden">
-    <div class="modal-content">
-    <section >
-        <h2>Login</h2>
-        <form action="">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <p>
-            Não tem conta? <a href="#cadastro">Cadastre-se</a>
-        </p>
-        <button id="fechar">Fechar</button>
-    </section>
-    </div>
-</div>
+      </nav>
+    </header>
 
-       
+    <main>
+      <div id="modal" class="hidden">
+        <div class="modal-content">
+          <section>
+            <h2>Login</h2>
 
+            <form action="">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
 
+              <label for="senha">Senha:</label>
+              <input type="password" id="senha" name="senha" required />
 
-    <div class="container">
+              <button type="submit">Entrar</button>
+            </form>
 
-<aside class="lateral">
-<h2>Categorias</h2>
-<div class="categoria ativa">
-<span>Todos os livros</span>
-<strong>?</strong>
-</div>
+            <p>
+              Não tem conta?
+              <a href="#cadastro">Cadastre-se</a>
+            </p>
 
-<div class="categoria">
-<span class="bolinha infantil"></span>
-<span>Infantil</span>
-<strong>?</strong>
-</div>
+            <button id="fechar">Fechar</button>
+          </section>
+        </div>
+      </div>
 
-<div class="categoria">
-<span class="bolinha juvenil"></span>
-<span>Juvenil</span>
-<strong>?</strong>
-</div>
+      <div class="container">
+        <aside class="lateral">
+          <h2>Categorias</h2>
 
-<div class="categoria">
-<span class="bolinha literatura"></span>
-<span>Literatura</span>
-<strong>?</strong>
-</div>
+          <div class="categoria ativa">
+            <span>Todos os livros</span>
+            <strong>?</strong>
+          </div>
 
-<hr>
+          <div class="categoria">
+            <span class="bolinha infantil"></span>
+            <span>Infantil</span>
+            <strong>?</strong>
+          </div>
 
-<h2>Faixa etária</h2>
+          <div class="categoria">
+            <span class="bolinha juvenil"></span>
+            <span>Juvenil</span>
+            <strong>?</strong>
+          </div>
 
-<label>
-<input type="checkbox">
-0 a 6 anos
-</label>
+          <div class="categoria">
+            <span class="bolinha literatura"></span>
+            <span>Literatura</span>
+            <strong>?</strong>
+          </div>
 
-<label>
-<input type="checkbox">
-7 a 12 anos
-</label>
+          <hr />
 
-<label>
-<input type="checkbox">
-13 a 17 anos
-</label>
+          <h2>Faixa etária</h2>
 
-<label>
-<input type="checkbox">
-Adultos
-</label>
+          <label>
+            <input type="checkbox" />
+            0 a 6 anos
+          </label>
 
-</aside>
+          <label>
+            <input type="checkbox" />
+            7 a 12 anos
+          </label>
 
-<main class="conteudo">
- Parte para os Livros 
+          <label>
+            <input type="checkbox" />
+            13 a 17 anos
+          </label>
 
+          <label>
+            <input type="checkbox" />
+            Adultos
+          </label>
+        </aside>
 
-</div>
-</main>
-    <script src="inicio.js"></script>
-</body>
+        <div class="conteudo">
+          <p>Parte para os Livros</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="/scripts/inicio.js"></script>
+  </body>
 </html>
