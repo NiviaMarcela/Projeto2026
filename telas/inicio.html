@@ -1,11 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1></h1>
+    <link rel="stylesheet" href="../estilos/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+  </head>
+  <body>
+    <main class="dashboard">
+
+        <header class="cabecalho-dashboard">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Visão geral da biblioteca</p>
+            </div>
+
+            <div class="seletor-data">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <input type="date" id="dataInicio">
+
+                <span>-</span>
+
+                <input type="date" id="dataFim">
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </header>
+
+       
+        <section class="cards">
+
+            
+            <div class="card">
+
+                <div class="icone">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="informacoes">
+                    <h2 id="totalLivros">0</h2>
+                    <p>Livros cadastrados</p>
+                    <span id="livrosMes">0 este mês</span>
+                </div>
+
+            </div>
+
+           
+            <div class="card">
+
+                <div class="icone">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div class="informacoes">
+                    <h2 id="totalReservas">0</h2>
+                    <p>Reservas este mês</p>
+                    <span id="reservasMes">0% vs. mês anterior</span>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="informacoes">
+                    <h2 id="totalusuario">0</h2>
+                    <p>Usuários cadastrados</p>
+                    <span id="usuariosMes">0 este mês</span>
+                </div>
+
+            </div>
+
+          
+            <div class="card">
+
+                <div class="icone">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+
+                <div class="informacoes">
+                    <h2 id="taxadedevolucao">0%</h2>
+                    <p>Taxa de devolução</p>
+                    <span id="devolucoesMes">0% vs. mês anterior</span>
+                </div>
+
+            </div>
+
+        </section>
+
+      
+        <section class="paineis">
+
+            
+            <div class="card grafico-reservas">
+
+                <h3>Reservas por mês</h3>
+
+                <div id="graficoReservas" class="grafico">
+
+                </div>
+
+            </div>
+
+            <div class="card livros-reservados">
+
+                <h3>Livros mais reservados</h3>
+
+                <div id="listaLivrosReservados">
+                  
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="painel-inferior">
+
+            
+            <div class="card reservas-recentes">
+
+                <h3>Reservas recentes</h3>
+
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Livro</th>
+                                <th>Data da reserva</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="listaReservas">
+                            
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <a href="#" class="link-reservas">
+                    Ver todas as reservas
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+            </div>
+
+          
+            <div class="card-acoes-rapidas">
+
+                <h3>Ações rápidas</h3>
+
+                <button type="button" class="botao-acao">
+                    <i class="fa-solid fa-plus"></i>
+                    Cadastrar novo livro
+                </button>
+
+                <button type="button" class="botao-acao">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Ver todas as reservas
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
 </body>
 </html>
+
+
+ 

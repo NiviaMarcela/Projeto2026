@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #14264a;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.cabecalho-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cabecalho-dashboard h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.cabecalho-dashboard p {
+    color: #71809c;
+    font-size: 14px;
+}
+
+.seletor-data {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e1e6ef;
+    border-radius: 8px;
+    color: #14264a;
+}
+
+.seletor-data i {
+    color: #53627d;
+}
+
+.seletor-data input {
+    width: 125px;
+    border: none;
+    outline: none;
+    color: #53627d;
+    font-family: inherit;
+    font-size: 11px;
+    background: transparent;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #edf0f5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(20, 38, 74, 0.04);
+    min-width: 0;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone {
+    font-size: 30px;
+    color: #2878f0;
+    flex-shrink: 0;
+}
+
+.cards .card:nth-child(2) .icone {
+    color: #0bb49b;
+}
+
+.cards .card:nth-child(3) .icone {
+    color: #3977f6;
+}
+
+.cards .card:nth-child(4) .icone {
+    color: #ffb21c;
+}
+
+.informacoes h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.informacoes p {
+    font-size: 12px;
+    color: #53627d;
+    margin-bottom: 9px;
+}
+
+.informacoes span {
+    display: block;
+    font-size: 10px;
+    color: #16b88a;
+}
+
+.livros-reservados {
+    margin-bottom: 18px;
+}
+
+#listaLivrosReservados {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
