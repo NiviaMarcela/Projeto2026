@@ -21,7 +21,7 @@ body {
     color: var(--text);
     font-family: Arial, sans-serif;
     background-color: #dce7f5;
-    background-image: url("/assets/Designer.png");
+    background-image: url("../assets/Designer.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
